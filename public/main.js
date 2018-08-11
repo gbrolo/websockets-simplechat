@@ -65,9 +65,14 @@ function getUrls(text) {
 }
 
 function addMessage() {
+    var quick_reply = document.getElementById("quick-reply").value;
     var student_id = document.getElementById("id-box").value;
     var text = document.getElementById("text-box").value;
     var nick = document.getElementById("nick-box").value;
+
+    if (quick_reply != "") {
+        text = quick_reply;
+    }
 
     // verify fields
 

@@ -73,3 +73,12 @@ input:focus {
     outline-color: #181818;
 }
 
+select {
+    margin-left: 20px;
+    padding: 14px;
+    border-radius: 5px;
+    background-color: #212121;
+    color: white;
+    border: 0px;
+}
+
