@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="main.js"></script>
+
+        <title>Chat Hub</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.onkeydown = function (e) {
+                e = e || window.event;
+                switch (e.which || e.keyCode) {
+                        case 13 : 
+                            addMessage();
+                }
+            }            
+        </script>
+        <div class="chat-box-area">
+            <input class="box" type="text" name="id-box" id="id-box" placeholder="ID">
+            <input class="box" type="text" name="nick-box" id="nick-box" placeholder="Nickname">
+            <input class="box" type="text" name="text-box" id="text-box" placeholder="Write your message">
+            <button class="round-btn" onclick="addMessage()">
+                <i class="fa fa-location-arrow"></i>
+            </button>
+        </div>
+
+        <div class="chat" id="chat-area"></div>
+
+    </body>
+</html>
