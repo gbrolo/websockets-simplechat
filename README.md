@@ -2,7 +2,7 @@
 Simplechat reborn, now with websockets!
 
 ## Installation and running the app
-Clone the repository and run ```yarn install```. Then run ```yarn start```. Then go to ```localhost:8080``` on your web browser.
+Clone the repository and run ```yarn install```. You will have to install ```nodemon@latest``` for developing. Otherwise, just change the ```start``` script at ```package.json```. Then run ```yarn start```. Finally go to ```localhost:8080``` on your web browser.
 
 ## Answers to lab questions
 This section is for CC3034's laboratory no. 5
